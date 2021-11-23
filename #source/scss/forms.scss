@@ -1,0 +1,49 @@
+//<FORM (a.f+tab)>====================================================================================================
+.form-row{@include flexbox();margin: 0px -15px;}
+.form__column{padding: 0px 15px;}
+//</FORM>====================================================================================================
+
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.btn{
+	display: inline-block;
+	height: 50px;
+	padding: 0px 21px;
+	background-color: transparent;
+	border:2px solid #40AD9F;
+	@media (min-width: $md1+px) {
+		&:hover{
+			@include anim(0.3s, 0s);
+			color:#fff;
+			background: #40AD9F;
+		}
+	}
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
+	color: #40AD9F;
+	font-weight: 500;
+}
+//</BUTTONS>====================================================================================================
+
+
+//<INPUT (inp+tab)>====================================================================================================
+input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.input{
+	background-color: #ffffff99;
+	height: 60px;
+	width: 100%;
+	display: block;
+	padding: 0px 20px;
+	&.focus{}
+	&.err{}
+	&.focus{}
+	&.err{}
+}
+textarea.input{
+	resize:none;
+	padding: 0px 0px;
+}
+//</INPUT>====================================================================================================
+
+
+
